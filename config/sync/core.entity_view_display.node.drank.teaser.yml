@@ -1,0 +1,52 @@
+uuid: d8175a08-a8f6-4200-b4a4-fb55cea53749
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.drank.field_drank_afbeelding
+    - field.field.node.drank.field_drank_alcoholpercentage
+    - field.field.node.drank.field_drank_inhoud
+    - field.field.node.drank.field_drank_type
+    - image.style.medium
+    - node.type.drank
+  module:
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.drank.teaser
+targetEntityType: node
+bundle: drank
+mode: teaser
+content:
+  field_drank_afbeelding:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_drank_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_drank_alcoholpercentage: true
+  field_drank_inhoud: true

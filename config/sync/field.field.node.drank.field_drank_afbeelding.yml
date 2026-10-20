@@ -1,0 +1,38 @@
+uuid: 5ae9ad2e-6af6-4714-92c6-a1a98d78ee55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drank_afbeelding
+    - node.type.drank
+  module:
+    - image
+id: node.drank.field_drank_afbeelding
+field_name: field_drank_afbeelding
+entity_type: node
+bundle: drank
+label: 'Drank Afbeelding'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: drankafbeeldingen
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: 350x350
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

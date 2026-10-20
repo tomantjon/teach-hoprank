@@ -1,0 +1,125 @@
+uuid: 3ded567a-1427-4f88-bb47-43263c10132e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.drank.field_drank_afbeelding
+    - field.field.node.drank.field_drank_alcoholpercentage
+    - field.field.node.drank.field_drank_inhoud
+    - field.field.node.drank.field_drank_type
+    - node.type.drank
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          be144da4-9ab8-4a75-b229-f2a46fdaa98b:
+            uuid: be144da4-9ab8-4a75-b229-f2a46fdaa98b
+            region: content
+            configuration:
+              id: 'extra_field_block:node:drank:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          6d60bd77-bcb0-4282-9d25-6e6c15994eae:
+            uuid: 6d60bd77-bcb0-4282-9d25-6e6c15994eae
+            region: content
+            configuration:
+              id: 'field_block:node:drank:field_drank_afbeelding'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: 'Drank Info'
+          context_mapping: {  }
+          column_widths: 33-34-33
+        components:
+          818a90df-24d9-4553-a172-24eda7134ed5:
+            uuid: 818a90df-24d9-4553-a172-24eda7134ed5
+            region: first
+            configuration:
+              id: 'field_block:node:drank:field_drank_alcoholpercentage'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_decimal
+                label: above
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e3b776a2-481f-4a1d-831f-00981165327f:
+            uuid: e3b776a2-481f-4a1d-831f-00981165327f
+            region: second
+            configuration:
+              id: 'field_block:node:drank:field_drank_inhoud'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a14ba154-c411-4d66-a357-4409dd616c81:
+            uuid: a14ba154-c411-4d66-a357-4409dd616c81
+            region: third
+            configuration:
+              id: 'field_block:node:drank:field_drank_type'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.drank.default
+targetEntityType: node
+bundle: drank
+mode: default
+content: {  }
+hidden:
+  field_drank_afbeelding: true
+  field_drank_alcoholpercentage: true
+  field_drank_inhoud: true
+  field_drank_type: true
+  links: true

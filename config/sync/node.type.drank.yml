@@ -1,0 +1,17 @@
+uuid: c88a24f5-d86e-4cd6-af0a-e5f110e39c72
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Drank
+type: drank
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

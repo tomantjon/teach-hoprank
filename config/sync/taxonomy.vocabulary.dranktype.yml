@@ -1,0 +1,9 @@
+uuid: 273e9b00-ba41-4b4b-9593-6e0bd30f5f58
+langcode: en
+status: true
+dependencies: {  }
+name: Dranktype
+vid: dranktype
+description: null
+weight: 0
+new_revision: false
