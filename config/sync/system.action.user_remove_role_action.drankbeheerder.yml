@@ -1,0 +1,14 @@
+uuid: e984c639-8406-434b-bfe8-778347ce77c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.drankbeheerder
+  module:
+    - user
+id: user_remove_role_action.drankbeheerder
+label: 'Remove the Drankbeheerder role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: drankbeheerder

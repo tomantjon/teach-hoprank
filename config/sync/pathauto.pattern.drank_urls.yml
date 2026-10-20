@@ -1,0 +1,23 @@
+uuid: 1fdb6e05-a133-4887-8798-90475f8cd7d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.drank
+  module:
+    - node
+id: drank_urls
+label: 'Drank URLs'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  aa91e94a-c54c-4513-968a-d4bcfaf7476d:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      drank: drank
+selection_logic: and
+weight: -5
+relationships: {  }
