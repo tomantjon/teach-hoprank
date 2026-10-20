@@ -1,0 +1,29 @@
+uuid: 0e66ce71-0a8d-4d85-95dd-46eef5593b6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sterke_bieren
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__sterke_bieren_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:sterke_bieren-block_1'
+settings:
+  id: 'views_block:sterke_bieren-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /dranken
